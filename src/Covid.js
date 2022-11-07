@@ -24,13 +24,6 @@ export default class Covid extends React.Component{
         
         return(
             <>
-            <div className="Header">    
-                <div className="Title">Date</div>
-                <div className="Title">State</div>
-                <div className="Title">Positive</div>
-                <div className="Title">Death</div>
-                <div className="Title">Recovered</div>
-            </div>
                 {this.state.states.map(state=>
                     <div className="grid-container" key={uuidv4()}>
                             <div className='grid-item'>{state.date}</div> 
